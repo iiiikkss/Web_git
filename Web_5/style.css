@@ -12,20 +12,29 @@ header{
     display: flex;
     flex-direction: column;
     margin: auto;
+    background: -webkit-linear-gradient(top, rgb(16, 12, 9), rgb(48, 38, 33));
+    padding: 25px 0;
+    width: 100%;
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     
 }
 
 .navLink{
-    color: burlywood;
+    color: rgb(210, 201, 175);
     text-decoration: none;
     padding: 0 20px;
-    box-shadow: -1px 0px 0px 0px black, 1px 0px 0px 0px black;
+    box-shadow: -1px 0px 0px 0px black, 1px 0px 0px 0px rgb(56, 47, 40);
+}
+.open{
+    box-shadow:  1px 0px 0px 0px rgb(56, 47, 40);
+}
+.close{
+    box-shadow: -1px 0px 0px 0px black;
 }
 
 .fastInfSec{
@@ -53,4 +62,45 @@ nav{
         box-shadow:none;
         padding: 10px 0;
     }
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-wrap{
+    width: 105px;
+    height: 65px;
+    background-color: black;
+    margin-right: 15px;
+}
+.text-wrap{
+    
+}
+
+
+.p-a-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p-a{
+    margin-right: 10px;
+    font-size: 10px;
 }
