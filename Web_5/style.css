@@ -1,11 +1,10 @@
 body{
-    background-color: rgb(226, 226, 226);
+    background: -webkit-linear-gradient(top, rgb(31, 22, 12) , rgb(16, 12, 9));
     margin: 0;
-    padding: 0 15px;
     display: flex;
     flex-direction: column;
     flex: auto;
-
+    font-size: 10px;
 }
 
 header{
@@ -13,11 +12,11 @@ header{
     flex-direction: column;
     margin: auto;
     background: -webkit-linear-gradient(top, rgb(16, 12, 9), rgb(48, 38, 33));
-    padding: 25px 0;
+    padding: 10px 0;
     width: 100%;
 }
 
-nav{
+header nav{
     display: flex;
     justify-content: center;
     position: relative;
@@ -29,6 +28,9 @@ nav{
     text-decoration: none;
     padding: 0 20px;
     box-shadow: -1px 0px 0px 0px black, 1px 0px 0px 0px rgb(56, 47, 40);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 9px;
 }
 .open{
     box-shadow:  1px 0px 0px 0px rgb(56, 47, 40);
@@ -37,17 +39,107 @@ nav{
     box-shadow: -1px 0px 0px 0px black;
 }
 
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+.first-part-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-logo{
+    width: 15%;
+    border-radius: 50%;
+    border: solid;
+    border-color: rgb(48, 38, 33);
+    background: -webkit-linear-gradient(top, rgb(16, 12, 9), rgb(48, 38, 33));
+}
+.h1-logo{
+    color: white;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.seo-logo{
+    color: #e89f39;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.h3-logo{
+    margin-top: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.img-man{
+    width: 30%;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    margin-left: 65px;
+    margin-right: 65px;
+}
 .fastInfSec{
     display: flex;
     flex-direction: row;
-    margin-top: 25px;
-
+    margin-top: 10px;
+    background-color: rgb(238, 238, 238);
+    justify-content: center;
 }
 
-.fastInfoArt{
-    box-shadow: -1px 0px 0px 0px black, 1px 0px 0px 0px black;
-    text-align: center;
 
+
+.fastInfoArt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 5px 0 5px;
+}
+.fast-info-img{
+    text-align: center;
+    width: 30%;
+}
+.fast-info-img img{
+    width: 100%;
+}
+.h3-article{
+    color: #535353;
+    font-size: 9px;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.p-article{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #ae6125;
+    font-size: 7px;
+    margin-top: 0;
+}
+.fastInfoArt button{
+    font-size: 6px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    border: 0.5px solid white;
+    border-radius: 4px 4px 0 0;
+    background: #f2ecdb;
+}
+
+.center{
+    box-shadow: -1px 0px 0px 0px rgb(230, 230, 230), 1px 0px 0px 0px rgb(230, 230, 230);
 }
 
 @media screen and (max-width: 500px){
@@ -64,43 +156,190 @@ nav{
     }
 }
 
-main{
-    background-color: rgb(255, 255, 255);
-}
+
 
 .information{
     display: flex;
     flex-direction: row;
+    margin: 15px 0;
+    
 }
 
 .welcome{
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
+    margin: 0 10px;
+}
+
+
+.info-h3{
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.info-h3 span{
+    color: #e89f39;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.info-p{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 6px;
 }
 
 .container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.img-wrap{
-    width: 105px;
-    height: 65px;
-    background-color: black;
-    margin-right: 15px;
+
+
+.container img{
+    width: 30%;
+    margin-right: 10px;
 }
+
 .text-wrap{
-    
+    width: 60%;
 }
 
+.text-h4{
+    margin: 0;
+    font-size: 8px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.text-p{
+    margin: 0;
+    font-size: 7px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
 
 .p-a-wrap{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.p-a{
+
+
+
+.p-a-wrap p{
+    margin: 5px;
+    font-size: 5px;
+
+}
+.p-a-wrap a{
+    font-size: 8px;
+    color: #b2ab94;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.news{
+    flex-basis: 50%;
+    margin: 0 10px;
+}
+.new-link-container a{
+    font-size: 7px;
+    color: #b2ab94;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.date-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.date-wrap img{
+    width: 5%; 
+    margin-right: 5px;
+}
+.date-wrap p{
+    font-size: 7px;
+    color: #ae6125;
+}
+
+.seo-section{
+    display: flex;
+    flex-direction: row;
+    background: #302621;
+}
+
+.seo-article{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.seo-heading-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.seo-heading-img{
+    width: 18%;
     margin-right: 10px;
-    font-size: 10px;
+}
+.h3-seo{
+    margin-bottom: 0;
+    color: #d2c9af;
+}
+.seo-subtitle{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 6px;
+    color: #84807e;
+}
+.p-heading-seo{
+    color: white;
+    margin-bottom: 0px;
+    font-size: 8px;
+}
+.p-text-seo{
+    margin-top: 0px;
+    font-size: 7px;
+    color: #848484;
+}
+.a-text-seo{
+    color: #b2ab94;
+    font-size: 7px;
+    margin-top: 5px;
+}
+.btn-seo-wrap{
+    text-align: end;
+}
+.seo-article button{
+    font-size: 6px;
+    color: white;
+    border: 0.5px solid #f3a70b;
+    border-radius: 2px 2px 2px 2px;
+    background: #f3a70b;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav-footer-link{
+    font-size: 8px;
+    text-decoration: none;
+    color: #b2ab94;
+    padding: 0 5px;
+    box-shadow: 1px 0px 0px 0px #b2ab94;
+}
+.close-footer-link{
+    box-shadow:none;
+}
+footer p{
+    font-size: 7px;
+    color: #b2ab94;
+    margin: 3px;
 }
